@@ -1,0 +1,20 @@
+# =================================
+# = Конфигурационный файл скрипта =
+# =================================
+---
+# Путь до таблиц
+path_to_tables: /path/
+# Путь для сохранения файлов с результатами
+path_to_save: /path/
+# Параметры работы с DBpedia Lookup
+dbpedia:
+  host: http://localhost
+  # По умолчанию порт 9274
+  port: 9274
+  api_path: lookup-application/api/search
+  # Параметры HTTP запроса к lookup сервису
+  # Параметры, указанные при запуске DBpedia, можно переопределить здесь
+  query_args:
+    format: JSON
+    maxResults: 10
+...
